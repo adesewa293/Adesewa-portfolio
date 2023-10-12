@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Header() {
   return (
     <div className="border-2 rounded-lg p-6 flex justify-between">
-      <div className="mt-4 font-mono text-amber-700">AdesewaTheDev</div>
+      <div className="mt-4 text-2xl font-mono text-amber-700">AdesewaTheDev🌷</div>
       <div>
         <Link
           className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"

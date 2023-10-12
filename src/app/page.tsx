@@ -13,7 +13,10 @@ export default function page() {
     <div>
       <div className="flex justify-between">
         <div className="flex-1">
-          <div className="text-6xl text-amber-700 font-serif mt-14 ml-3" data-aos="fade-up">
+          <div
+            className="text-6xl text-amber-700 font-serif mt-14 ml-3"
+            data-aos="fade-up"
+          >
             HI, I AM ADESEWA, A BUDDING WEB DEVELOPER
           </div>
           <div className="ml-3 mt-14 font-mono text-sm">
@@ -21,19 +24,19 @@ export default function page() {
             difference"
           </div>
         </div>
-<div className="flex-1" data-aos="fade-left">
-        <Image
-          className="mt-4 border-4 border-amber-400 rounded-full"
-          src="/webdevtoon.jpeg"
-          alt="my cartoon web developer"
-          width={600}
-          height={0}
-        />
+        <div className="flex-1" data-aos="fade-left">
+          <Image
+            className="mt-4 border-4 border-amber-400 rounded-full"
+            src="/webdevtoon.jpeg"
+            alt="my cartoon web developer"
+            width={600}
+            height={0}
+          />
         </div>
       </div>
       <div className="font-mono">
         <div className="border-2 border-amber-400 rounded-lg w-2/3 m-auto p-3 mt-14">
-          <div data-aos="fade-up" className="p-5 text-3xl">
+          <div data-aos="fade-up" className="p-5 text-amber-400 text-3xl">
             About Me
           </div>
           <p data-aos="fade-up">
@@ -44,8 +47,11 @@ export default function page() {
             expectations of clients and users.
           </p>
         </div>
-        <div data-aos="fade-down" className="border-2 border-amber-600 rounded-lg w-2/3 m-auto p-3 mt-4">
-          <div className="text-3xl p-5">My Journey</div>
+        <div
+          data-aos="fade-down"
+          className="border-2 border-amber-600 rounded-lg w-2/3 m-auto p-3 mt-4"
+        >
+          <div className="text-3xl text-amber-600 p-5">My Journey</div>
           <p data-aos="fade-down">
             My journey in the world of web development began a year ago, and it
             has been an exciting ride ever since. I started with a strong
@@ -57,7 +63,7 @@ export default function page() {
           </p>
         </div>
         <div className="border-2 rounded-lg border-amber-700 w-2/3 m-auto p-3 mt-4">
-          <div data-aos="fade-left" className="p-5 text-3xl">
+          <div data-aos="fade-left" className="p-5 text-amber-700 text-3xl">
             What I Do
           </div>
           <p data-aos="fade-left">
@@ -74,7 +80,7 @@ export default function page() {
           </p>
         </div>
         <div className="border-2 rounded-lg w-2/3 border-amber-800 m-auto p-3 mt-4">
-          <div data-aos="fade-right" className="text-3xl p-5">
+          <div data-aos="fade-right" className="text-3xl text-amber-800 p-5">
             Why Choose Me
           </div>
           <p data-aos="fade-right">
@@ -86,8 +92,8 @@ export default function page() {
             and best practices in the field.{" "}
           </p>
         </div>
-        <div className="border-2 rounded-lg w-2/3 border-amber-900 m-auto p-3 mt-4">
-          <div data-aos="fade-left" className="text-3xl p-5">
+        <div className="border-2 rounded-lg w-2/3 border-amber-900 m-auto p-3 mt-4 mb-6">
+          <div data-aos="fade-left" className="text-3xl text-amber-950 p-5">
             Let's Collaborate
           </div>
           <p data-aos="fade-left">
@@ -101,26 +107,32 @@ export default function page() {
           </p>
         </div>
       </div>
-      <div>My works</div>
+      <hr />
+      <div className="text-6xl text-center mt-7 mb-7  font-serif">My works</div>
+      <hr />
       <div>
-        <div>
-        <div>Fromscratch-recipes</div>
-        <div>
-          "From-Scratch Recipes", a web platform crafted with HTML, CSS, and
-          JavaScript. Where food enthusiasts come together to share, discover,
-          and savor delectable dishes created entirely from scratch.
-          "From-Scratch Recipes" celebrates the art of cooking from the heart,
-          and with its HTML, CSS, and JavaScript foundation, it ensures a
-          seamless and enjoyable browsing experience for all users. Join us in
-          embracing the pleasures of wholesome, homemade cuisine. Visit
-          "From-Scratch Recipes" today and embark on a culinary adventure like
-          no other.
-        </div>
-        <div className="">
-          <button className="border-2 rounded-lg p-4 mr-3">View Demo</button>
-          <button className="border-2 rounded-lg p-4">Source Code</button>
-        </div>
-        <Image
+        <div className="w-2/3 m-auto p-20">
+          <div className="text-3xl mb-4 font-serif">Fromscratch-recipes</div>
+          <div>
+            "From-Scratch Recipes", a web platform crafted with HTML, CSS, and
+            JavaScript. Where food enthusiasts come together to share, discover,
+            and savor delectable dishes created entirely from scratch.
+            "From-Scratch Recipes" celebrates the art of cooking from the heart,
+            and with its HTML, CSS, and JavaScript foundation, it ensures a
+            seamless and enjoyable browsing experience for all users. Join us in
+            embracing the pleasures of wholesome, homemade cuisine. Visit
+            "From-Scratch Recipes" today and embark on a culinary adventure like
+            no other.
+          </div>
+          <div className="mt-4">
+            <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
+              View Demo
+            </button>
+            <button className="border-2 border-amber-600 rounded-lg p-4">
+              Source Code
+            </button>
+          </div>
+          {/* <Image
           src="/mockup2-recipe.png"
           alt="my cartoon web developer"
           width={1400}
@@ -132,10 +144,10 @@ export default function page() {
           alt="my cartoon web developer"
           width={1400}
           height={2500}
-        />
+        /> */}
         </div>
-        <div>
-          <div>Can of books</div>
+        <div className="w-2/3 m-auto p-20" data-aos="fade-left">
+          <div className="text-3xl mb-4 font-serif">Can of books</div>
           <div>
             "Can of Books," where the world of literature comes alive. Our book
             sharing platform, built with the dynamic duo of React and Express,
@@ -150,13 +162,17 @@ export default function page() {
             Join us in celebrating the magic of books, and become a part of the
             global conversation about literature. Tech Stack: React, Express.
           </div>
-          <div className="">
-            <button className="border-2 rounded-lg p-4 mr-3">View Demo</button>
-            <button className="border-2 rounded-lg p-4">Source Code</button>
+          <div className="mt-4">
+            <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
+              View Demo
+            </button>
+            <button className="border-2 border-amber-600 rounded-lg p-4">
+              Source Code
+            </button>
           </div>
         </div>
-        <div>
-          <div>resident choice</div>
+        <div className="w-2/3 m-auto p-20" data-aos="fade-left">
+          <div className="text-3xl mb-4 font-serif">Resident Choice</div>
           <div>
             "Resident Choice" is a digital haven dedicated to enhancing the
             well-being and quality of life for residents in care homes.
@@ -166,13 +182,17 @@ export default function page() {
             activities, tailored to their interests and schedules. Tech Stack:
             React, Express.
           </div>
-          <div className="">
-            <button className="border-2 rounded-lg p-4 mr-3">View Demo</button>
-            <button className="border-2 rounded-lg p-4">Source Code</button>
+          <div className="mt-4">
+            <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
+              View Demo
+            </button>
+            <button className="border-2 border-amber-600 rounded-lg p-4">
+              Source Code
+            </button>
           </div>
         </div>
-        <div>
-          <div>explore enroute</div>
+        <div className="w-2/3 m-auto p-20" data-aos="fade-left">
+          <div className="text-3xl mb-4 font-serif">Explore Enroute</div>
           <div>
             Explore Enroute" is your passport to a world of adventure and
             exploration. This captivating travel blog, expertly designed with
@@ -185,29 +205,151 @@ export default function page() {
             armchair explorer, "Explore Enroute" invites you to join us on this
             journey of wanderlust and exploration. Tech Stack: Next.js.
           </div>
-          <div className="">
-            <button className="border-2 rounded-lg p-4 mr-3">View Demo</button>
-            <button className="border-2 rounded-lg p-4">Source Code</button>
+          <div className="mt-4">
+            <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
+              View Demo
+            </button>
+            <button className="border-2 border-amber-600 rounded-lg p-4">
+              Source Code
+            </button>
           </div>
         </div>
-        <div>
-          <div>Calculator</div>
+        <div className="w-2/3 m-auto p-20" data-aos="fade-left">
+          <div className="text-3xl mb-4 font-serif">Calculator</div>
           <div>
             "React Calculator" is your go-to digital calculator app, designed to
             simplify and streamline your mathematical tasks. Built entirely with
             React, it offers a responsive and user-friendly tool for your daily
             calculations.
           </div>
-          <div className="">
-            <button className="border-2 rounded-lg p-4 mr-3">View Demo</button>
-            <button className="border-2 rounded-lg p-4">Source Code</button>
+          <div className="mt-4">
+            <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
+              View Demo
+            </button>
+            <button className="border-2 border-amber-600 rounded-lg p-4">
+              Source Code
+            </button>
+          </div>
+        </div>
+        <hr />
+
+        <div className="text-6xl text-center mt-7 mb-7  font-serif">
+          Here are the few technologies i have used
+        </div>
+
+        <hr />
+        <div className="flex justify-between w-2/3 m-auto">
+          <div>
+            <p
+              className="border-amber-400 border-b-2 aos-init aos animate mt-4 pb-3"
+              data-aos="fade-right"
+            >
+              HTML
+            </p>
+            <p
+              className="border-amber-500 border-b-2 aos-init aos animate mt-4 pb-3"
+              data-aos="fade-right"
+            >
+              CSS
+            </p>
+            <p
+              className="border-amber-600 border-b-2 aos-init aos animate mt-4 pb-3"
+              data-aos="fade-right"
+            >
+              JavaScript
+            </p>
+            <p
+              className="border-amber-700 border-b-2 aos-init aos animate mt-4 pb-3"
+              data-aos="fade-right"
+            >
+              NextJS
+            </p>
+            <p
+              className="border-amber-800 border-b-2 aos-init aos animate mt-4 pb-3"
+              data-aos="fade-right"
+            >
+              ReactJS
+            </p>
+          </div>
+          <div className="mb-7">
+            <p
+              className="border-amber-400 border-b-2 aos-init aos animate mt-4 pb-3"
+              data-aos="fade-right"
+            >
+              SCSS
+            </p>
+            <p
+              className="border-amber-500 border-b-2 aos-init aos animate mt-4 pb-3"
+              data-aos="fade-right"
+            >
+              TailwindCSS
+            </p>
+            <p
+              className="border-amber-600 border-b-2 aos-init aos animate mt-4 pb-3"
+              data-aos="fade-right"
+            >
+              Express
+            </p>
+            <p
+              className="border-amber-700 border-b-2 aos-init aos animate mt-4 pb-3"
+              data-aos="fade-right"
+            >
+              Bootstrap
+            </p>
+            <p
+              className="border-amber-800 border-b-2 aos-init aos animate mt-4 pb-3"
+              data-aos="fade-right"
+            >
+              TypeScript
+            </p>
           </div>
         </div>
         <div>
-          <div>GET IN TOUCH</div>
-          <form>
-            <input></input>
+          <hr />
+          <div className="text-6xl text-center mt-7 mb-7  font-serif">
+            Get in touch
+          </div>
+          <hr />
+          <div className="w-2/3 m-auto p-10">
+          <p className="">
+            Dropping a line to say hello,ask for my resume or see if we can
+            build somehing amazing together? I'd love to hear from you! Please
+            fill in your information below and i look foward to hearing from
+            you!
+          </p>
+          <form className="ml-40">
+            <input className="mb-3 mt-3 pl-2"
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+              value=""
+            ></input><br />
+            <input className="mb-3 pl-2"
+              type="text"
+              name="email"
+              placeholder="Email"
+              required
+              value=""
+            ></input><br />
+            <input className="mb-3 pl-2"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              value=""
+            ></input><br />
+            <textarea className="mb-3 pl-2"
+              cols={35}
+              rows={10}
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea><br />
+            <input className="border-2 border-amber-500 p-4 rounded-lg w-80" type="submit" value="Send"></input>
           </form>
+          </div>
+          <hr />
+
         </div>
       </div>
     </div>
