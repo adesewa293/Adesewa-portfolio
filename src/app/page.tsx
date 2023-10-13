@@ -2,12 +2,36 @@
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { FormEvent, useEffect } from "react";
+import emailjs from "@emailjs/browser";
+import Typewriter from "typewriter-effect";
 
 export default function Page() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const target = event.currentTarget;
+    emailjs
+      .sendForm(
+        "service_z3c9mg7",
+        "template_mv15r8x",
+        event.currentTarget,
+        "0B8Vs27m6zU4QzAmn"
+      )
+      .then(
+        function (result) {
+          console.log(result.text);
+          target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <div>
@@ -17,7 +41,23 @@ export default function Page() {
             className="text-6xl text-amber-700 font-serif mt-14 ml-3"
             data-aos="fade-up"
           >
-            HI, I AM ADESEWA, A BUDDING WEB DEVELOPER
+            <p>HI, I AM</p>
+            <Typewriter
+              options={{
+                strings: ["AISHAT,"],
+                autoStart: true,
+                loop: true,
+              }}
+              // onInit={(typewriter) => {
+              //   typewriter
+              //     .typeString("I AM AISHAT, A BUDDING WEB DEVELOPER")
+              //     .callFunction(() => {
+              //       console.log("String typed out!");
+              //     })
+              //     .start();
+              // }}
+            />
+            <p>A BUDDING WEB DEVELOPER</p>
           </div>
           <div className="ml-3 mt-14 font-mono text-sm">
             "I am passionate about building beautiful projects and making a
@@ -34,8 +74,12 @@ export default function Page() {
           />
         </div>
       </div>
+
       <div className="font-mono">
-        <div className="border-2 border-amber-400 rounded-lg w-2/3 m-auto p-3 mt-14">
+        <div
+          id="about"
+          className="border-2 border-amber-400 rounded-lg w-2/3 m-auto p-3 mt-14"
+        >
           <div data-aos="fade-up" className="p-5 text-amber-400 text-3xl">
             About Me
           </div>
@@ -108,43 +152,53 @@ export default function Page() {
         </div>
       </div>
       <hr />
-      <div className="text-6xl text-center mt-7 mb-7  font-serif">My works</div>
+      <div id="projects" className="text-6xl text-center mt-7 mb-7  font-serif">
+        My works
+      </div>
       <hr />
       <div>
         <div className="w-2/3 m-auto p-20">
-          <div className="text-3xl mb-4 font-serif">Fromscratch-recipes</div>
-          <div>
-            "From-Scratch Recipes", a web platform crafted with HTML, CSS, and
-            JavaScript. Where food enthusiasts come together to share, discover,
-            and savor delectable dishes created entirely from scratch.
-            "From-Scratch Recipes" celebrates the art of cooking from the heart,
-            and with its HTML, CSS, and JavaScript foundation, it ensures a
-            seamless and enjoyable browsing experience for all users. Join us in
-            embracing the pleasures of wholesome, homemade cuisine. Visit
-            "From-Scratch Recipes" today and embark on a culinary adventure like
-            no other.
+          <div className="flex justify-between">
+            <div>
+              <div className="text-3xl mb-4 font-serif">
+                Fromscratch-recipes
+              </div>
+              <div>
+                "From-Scratch Recipes", a web platform crafted with HTML, CSS,
+                and JavaScript. Where food enthusiasts come together to share,
+                discover, and savor delectable dishes created entirely from
+                scratch. "From-Scratch Recipes" celebrates the art of cooking
+                from the heart, and with its HTML, CSS, and JavaScript
+                foundation, it ensures a seamless and enjoyable browsing
+                experience for all users. Join us in embracing the pleasures of
+                wholesome, homemade cuisine. Visit "From-Scratch Recipes" today
+                and embark on a culinary adventure like no other.
+              </div>
+              <div className="mt-4">
+                <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
+                  View Demo
+                </button>
+                <button className="border-2 border-amber-600 rounded-lg p-4">
+                  Source Code
+                </button>
+              </div>
+            </div>
+            <div>
+              <Image
+                src="/mockup2-recipe.png"
+                alt="my cartoon web developer"
+                width={700}
+                height={0}
+              />
+              <Image
+                className=""
+                src="/mockup-recipe.png"
+                alt="my cartoon web developer"
+                width={700}
+                height={0}
+              />
+            </div>
           </div>
-          <div className="mt-4">
-            <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
-              View Demo
-            </button>
-            <button className="border-2 border-amber-600 rounded-lg p-4">
-              Source Code
-            </button>
-          </div>
-          {/* <Image
-          src="/mockup2-recipe.png"
-          alt="my cartoon web developer"
-          width={1400}
-          height={2500}
-        />
-        <Image
-          className=""
-          src="/mockup-recipe.png"
-          alt="my cartoon web developer"
-          width={1400}
-          height={2500}
-        /> */}
         </div>
         <div className="w-2/3 m-auto p-20" data-aos="fade-left">
           <div className="text-3xl mb-4 font-serif">Can of books</div>
@@ -170,6 +224,21 @@ export default function Page() {
               Source Code
             </button>
           </div>
+          <div>
+              <Image
+                src="/books.png"
+                alt="my cartoon web developer"
+                width={100}
+                height={0}
+              />
+              <Image
+                className=""
+                src="/books2.png"
+                alt="my cartoon web developer"
+                width={200}
+                height={0}
+              />
+            </div>
         </div>
         <div className="w-2/3 m-auto p-20" data-aos="fade-left">
           <div className="text-3xl mb-4 font-serif">Resident Choice</div>
@@ -190,6 +259,19 @@ export default function Page() {
               Source Code
             </button>
           </div>
+          <Image
+                src="/reesideent-choice.png"
+                alt="my cartoon web developer"
+                width={250}
+                height={0}
+              />
+              <Image
+                className=""
+                src="/resident-choice.png"
+                alt="my cartoon web developer"
+                width={150}
+                height={0}
+              />
         </div>
         <div className="w-2/3 m-auto p-20" data-aos="fade-left">
           <div className="text-3xl mb-4 font-serif">Explore Enroute</div>
@@ -213,6 +295,19 @@ export default function Page() {
               Source Code
             </button>
           </div>
+          <Image
+                src="/mockup-travelblog.png"
+                alt="my cartoon web developer"
+                width={250}
+                height={0}
+              />
+              <Image
+                className=""
+                src="/untitled.png"
+                alt="my cartoon web developer"
+                width={150}
+                height={0}
+              />
         </div>
         <div className="w-2/3 m-auto p-20" data-aos="fade-left">
           <div className="text-3xl mb-4 font-serif">Calculator</div>
@@ -239,7 +334,7 @@ export default function Page() {
 
         <hr />
         <div className="flex justify-between w-2/3 m-auto">
-          <div>
+          <div className="flex-1 mr-10">
             <p
               className="border-amber-400 border-b-2 aos-init aos animate mt-4 pb-3"
               data-aos="fade-right"
@@ -271,7 +366,7 @@ export default function Page() {
               ReactJS
             </p>
           </div>
-          <div className="mb-7">
+          <div className="mb-7 flex-1">
             <p
               className="border-amber-400 border-b-2 aos-init aos animate mt-4 pb-3"
               data-aos="fade-right"
@@ -306,50 +401,61 @@ export default function Page() {
         </div>
         <div>
           <hr />
-          <div className="text-6xl text-center mt-7 mb-7  font-serif">
+          <div
+            id="contact"
+            className="text-6xl text-center mt-7 mb-7  font-serif"
+          >
             Get in touch
           </div>
           <hr />
           <div className="w-2/3 m-auto p-10">
-          <p className="">
-            Dropping a line to say hello,ask for my resume or see if we can
-            build somehing amazing together? I'd love to hear from you! Please
-            fill in your information below and i look foward to hearing from
-            you!
-          </p>
-          <form className="ml-40">
-            <input className="mb-3 mt-3 pl-2"
-              type="text"
-              name="name"
-              placeholder="Name"
-              required
-              value=""
-            ></input><br />
-            <input className="mb-3 pl-2"
-              type="text"
-              name="email"
-              placeholder="Email"
-              required
-              value=""
-            ></input><br />
-            <input className="mb-3 pl-2"
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              value=""
-            ></input><br />
-            <textarea className="mb-3 pl-2"
-              cols={35}
-              rows={10}
-              name="message"
-              placeholder="Message"
-              required
-            ></textarea><br />
-            <input className="border-2 border-amber-500 p-4 rounded-lg w-80" type="submit" value="Send"></input>
-          </form>
+            <p className="">
+              Dropping a line to say hello,ask for my resume or see if we can
+              build somehing amazing together? I'd love to hear from you! Please
+              fill in your information below and i look foward to hearing from
+              you!
+            </p>
+            <form onSubmit={handleSubmit} className="text-black ml-40">
+              <input
+                className="mb-3 mt-3 pl-2"
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <br />
+              <input
+                className="mb-3 pl-2"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <br />
+              <input
+                className="mb-3 pl-2"
+                type="text"
+                name="subject"
+                placeholder="Subject"
+              />
+              <br />
+              <textarea
+                className="mb-3 pl-2"
+                cols={35}
+                rows={10}
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
+              <br />
+              <input
+                className="text-white border-2 border-amber-500 p-4 rounded-lg w-80"
+                type="submit"
+                value="Send"
+              ></input>
+            </form>
           </div>
           <hr />
-
         </div>
       </div>
     </div>

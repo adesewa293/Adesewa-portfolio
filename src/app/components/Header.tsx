@@ -3,8 +3,8 @@ import Link from "next/link"
 export default function Header() {
   return (
     <div className="border-2 rounded-lg p-6 flex justify-between">
-      <div className="mt-4 text-2xl font-mono text-amber-700">AdesewaTheDev🌷</div>
-      <div>
+      <Link href="/"className="mt-4 text-2xl font-mono text-amber-700">AdesewaTheDev🌷</Link>
+      <div className="mt-4">
         <Link
           className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
           href="/"
@@ -13,22 +13,22 @@ export default function Header() {
         </Link>
         <Link
           className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
-          href="/about"
+          href="#about"
         >
           About
         </Link>
         <Link
           className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
-          href="/contact"
+          href="#contact"
         >
           Contact
         </Link>
         <Link
           className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
-          href="/projects">
+          href="#projects">
          Projects
           </Link>
-        <button className="border-amber-700 border-2 rounded-lg p-3">RESUME</button> 
+        <Link target="_blank" href="/assets/resume.pdf" className="border-amber-700 border-2 rounded-lg p-3">RESUME</Link> 
         
       </div>
 
