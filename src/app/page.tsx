@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import { FormEvent, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Typewriter from "typewriter-effect";
+import Link from "next/link";
 
 export default function Page() {
   useEffect(() => {
@@ -178,9 +179,9 @@ export default function Page() {
                 <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
                   View Demo
                 </button>
-                <button className="border-2 border-amber-600 rounded-lg p-4">
+                <Link target="_blank" href="https://github.com/adesewa293/fromscratch-recipes" className="border-2 border-amber-600 rounded-lg p-4">
                   Source Code
-                </button>
+                </Link>
               </div>
             </div>
             <div>
@@ -201,30 +202,8 @@ export default function Page() {
           </div>
         </div>
         <div className="w-2/3 m-auto p-20" data-aos="fade-left">
-          <div className="text-3xl mb-4 font-serif">Can of books</div>
-          <div>
-            "Can of Books," where the world of literature comes alive. Our book
-            sharing platform, built with the dynamic duo of React and Express,
-            is the digital gathering place for bookworms worldwide. we offer a
-            📖 Diverse Library where you can dive into an extensive collection
-            of books spanning genres from suspenseful thrillers to heartwarming
-            classics. At "Can of Books," we're more than a website; we're a
-            gathering place for those who believe in the transformative power of
-            words. Our user-friendly design, empowered by React and Express,
-            ensures a seamless and enjoyable experience for all users, whether
-            you're a seasoned book aficionado or new to the world of reading.
-            Join us in celebrating the magic of books, and become a part of the
-            global conversation about literature. Tech Stack: React, Express.
-          </div>
-          <div className="mt-4">
-            <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
-              View Demo
-            </button>
-            <button className="border-2 border-amber-600 rounded-lg p-4">
-              Source Code
-            </button>
-          </div>
-          <div>
+          <div className="flex justify-between">
+            <div>
               <Image
                 src="/books.png"
                 alt="my cartoon web developer"
@@ -239,78 +218,127 @@ export default function Page() {
                 height={0}
               />
             </div>
+            <div>
+              <div className="text-3xl mb-4 font-serif">Can of books</div>
+              <div>
+                "Can of Books," where the world of literature comes alive. Our
+                book sharing platform, built with the dynamic duo of React and
+                Express, is the digital gathering place for bookworms worldwide.
+                we offer a 📖 Diverse Library where you can dive into an
+                extensive collection of books spanning genres from suspenseful
+                thrillers to heartwarming classics. At "Can of Books," we're
+                more than a website; we're a gathering place for those who
+                believe in the transformative power of words. Our user-friendly
+                design, empowered by React and Express, ensures a seamless and
+                enjoyable experience for all users, whether you're a seasoned
+                book aficionado or new to the world of reading. Join us in
+                celebrating the magic of books, and become a part of the global
+                conversation about literature. Tech Stack: React, Express.
+              </div>
+              <div className="mt-4">
+                <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
+                  View Demo
+                </button>
+                <Link target="_blank" href="https://github.com/adesewa293/can-of-books-frontend" className="border-2 border-amber-600 rounded-lg p-4">
+                  Source Code
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="w-2/3 m-auto p-20" data-aos="fade-left">
-          <div className="text-3xl mb-4 font-serif">Resident Choice</div>
+
+        <div
+          className=" flex justify-between w-2/3 m-auto p-20"
+          data-aos="fade-left"
+        >
           <div>
-            "Resident Choice" is a digital haven dedicated to enhancing the
-            well-being and quality of life for residents in care homes.
-            Meticulously crafted with React and Express, this platform places
-            the power of choice in the hands of those we care for. Keep
-            residents informed and engaged with a calendar of events and
-            activities, tailored to their interests and schedules. Tech Stack:
-            React, Express.
+            <div className="text-3xl mb-4 font-serif">Resident Choice</div>
+            <div>
+              "Resident Choice" is a digital haven dedicated to enhancing the
+              well-being and quality of life for residents in care homes.
+              Meticulously crafted with React and Express, this platform places
+              the power of choice in the hands of those we care for. Keep
+              residents informed and engaged with a calendar of events and
+              activities, tailored to their interests and schedules. Tech Stack:
+              React, Express.
+            </div>
+            <div className="mt-4">
+              <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
+                View Demo
+              </button>
+              <Link target="_blank" href="https://github.com/adesewa293/reesident-choice-frontend" className="border-2 border-amber-600 rounded-lg p-4">
+                Source Code
+              </Link>
+            </div>
           </div>
-          <div className="mt-4">
-            <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
-              View Demo
-            </button>
-            <button className="border-2 border-amber-600 rounded-lg p-4">
-              Source Code
-            </button>
-          </div>
-          <Image
-                src="/reesideent-choice.png"
-                alt="my cartoon web developer"
-                width={250}
-                height={0}
-              />
-              <Image
-                className=""
-                src="/resident-choice.png"
-                alt="my cartoon web developer"
-                width={150}
-                height={0}
-              />
-        </div>
-        <div className="w-2/3 m-auto p-20" data-aos="fade-left">
-          <div className="text-3xl mb-4 font-serif">Explore Enroute</div>
           <div>
-            Explore Enroute" is your passport to a world of adventure and
-            exploration. This captivating travel blog, expertly designed with
-            Next.js, is your gateway to discovering the wonders of our planet.
-            Find valuable insights and practical tips for your journeys, curated
-            by seasoned travelers. "Explore Enroute" is more than just a blog;
-            it's a virtual odyssey that brings the world to your screen. Built
-            with Next.js, this platform offers a responsive and immersive
-            experience for all readers. Whether you're a seasoned traveler or an
-            armchair explorer, "Explore Enroute" invites you to join us on this
-            journey of wanderlust and exploration. Tech Stack: Next.js.
+            <Image
+              src="/reesideent-choice.png"
+              alt="my cartoon web developer"
+              width={250}
+              height={0}
+            />
+            <Image
+              className=""
+              src="/resident-choice.png"
+              alt="my cartoon web developer"
+              width={150}
+              height={0}
+            />
           </div>
-          <div className="mt-4">
-            <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
-              View Demo
-            </button>
-            <button className="border-2 border-amber-600 rounded-lg p-4">
-              Source Code
-            </button>
-          </div>
-          <Image
-                src="/mockup-travelblog.png"
-                alt="my cartoon web developer"
-                width={250}
-                height={0}
-              />
-              <Image
-                className=""
-                src="/untitled.png"
-                alt="my cartoon web developer"
-                width={150}
-                height={0}
-              />
         </div>
-        <div className="w-2/3 m-auto p-20" data-aos="fade-left">
-          <div className="text-3xl mb-4 font-serif">Calculator</div>
+
+        <div
+          className="w-2/3 m-auto p-20 flex justify-between"
+          data-aos="fade-left"
+        >
+          <div>
+            <Image
+              src="/mockup-travelblog.png"
+              alt="my cartoon web developer"
+              width={250}
+              height={0}
+            />
+            <Image
+              className=""
+              src="/untitled.png"
+              alt="my cartoon web developer"
+              width={150}
+              height={0}
+            />
+          </div>
+          <div>
+            <div className="text-3xl mb-4 font-serif">Explore Enroute</div>
+            <div>
+              Explore Enroute" is your passport to a world of adventure and
+              exploration. This captivating travel blog, expertly designed with
+              Next.js, is your gateway to discovering the wonders of our planet.
+              Find valuable insights and practical tips for your journeys,
+              curated by seasoned travelers. "Explore Enroute" is more than just
+              a blog; it's a virtual odyssey that brings the world to your
+              screen. Built with Next.js, this platform offers a responsive and
+              immersive experience for all readers. Whether you're a seasoned
+              traveler or an armchair explorer, "Explore Enroute" invites you to
+              join us on this journey of wanderlust and exploration. Tech Stack:
+              Next.js.
+            </div>
+            <div className="mt-4">
+              <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
+                View Demo
+              </button>
+              <Link href="https://github.com/adesewa293/explore-enroute" className="border-2 border-amber-600 rounded-lg p-4">
+                Source Code
+              </Link>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div className="flex justify-between w-2/3 m-auto p-20" data-aos="fade-left">
+          <div>
+          <div className="text-3xl mb-4 font-serif">City  Explorer</div>
           <div>
             "React Calculator" is your go-to digital calculator app, designed to
             simplify and streamline your mathematical tasks. Built entirely with
@@ -321,11 +349,31 @@ export default function Page() {
             <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
               View Demo
             </button>
-            <button className="border-2 border-amber-600 rounded-lg p-4">
+            <Link target="_blank" href="https://github.com/adesewa293/city-explorer" className="border-2 border-amber-600 rounded-lg p-4">
               Source Code
-            </button>
+            </Link>
+          </div>
+          </div>
+          <div>
+            <Image
+              src="/city-explorer-2.png"
+              alt="my cartoon web developer"
+              width={250}
+              height={0}
+            />
+            <Image
+              className=""
+              src="/city-explorer.png"
+              alt="my cartoon web developer"
+              width={150}
+              height={0}
+            />
           </div>
         </div>
+
+
+
+
         <hr />
 
         <div className="text-6xl text-center mt-7 mb-7  font-serif">
