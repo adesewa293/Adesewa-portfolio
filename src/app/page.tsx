@@ -158,9 +158,9 @@ export default function Page() {
       </div>
       <hr />
       <div>
-        <div className="w-2/3 m-auto p-20">
+        <div className="p-20">
           <div className="flex justify-between">
-            <div>
+            <div className="w-80">
               <div className="text-3xl mb-4 font-serif">
                 Fromscratch-recipes
               </div>
@@ -188,20 +188,20 @@ export default function Page() {
               <Image
                 src="/mockup2-recipe.png"
                 alt="my cartoon web developer"
-                width={700}
+                width={100}
                 height={0}
               />
               <Image
                 className=""
                 src="/mockup-recipe.png"
                 alt="my cartoon web developer"
-                width={700}
+                width={100}
                 height={0}
               />
             </div>
           </div>
         </div>
-        <div className="w-2/3 m-auto p-20" data-aos="fade-left">
+        <div className="p-20" data-aos="fade-left">
           <div className="flex justify-between">
             <div>
               <Image
@@ -220,7 +220,7 @@ export default function Page() {
             </div>
             <div>
               <div className="text-3xl mb-4 font-serif">Can of books</div>
-              <div>
+              <div className="w-80">
                 "Can of Books," where the world of literature comes alive. Our
                 book sharing platform, built with the dynamic duo of React and
                 Express, is the digital gathering place for bookworms worldwide.
@@ -248,12 +248,12 @@ export default function Page() {
         </div>
 
         <div
-          className=" flex justify-between w-2/3 m-auto p-20"
+          className=" flex justify-between p-20"
           data-aos="fade-left"
         >
           <div>
             <div className="text-3xl mb-4 font-serif">Resident Choice</div>
-            <div>
+            <div className="w-80">
               "Resident Choice" is a digital haven dedicated to enhancing the
               well-being and quality of life for residents in care homes.
               Meticulously crafted with React and Express, this platform places
@@ -289,7 +289,7 @@ export default function Page() {
         </div>
 
         <div
-          className="w-2/3 m-auto p-20 flex justify-between"
+          className="p-20 flex justify-between"
           data-aos="fade-left"
         >
           <div>
@@ -309,7 +309,7 @@ export default function Page() {
           </div>
           <div>
             <div className="text-3xl mb-4 font-serif">Explore Enroute</div>
-            <div>
+            <div className="w-80">
               Explore Enroute" is your passport to a world of adventure and
               exploration. This captivating travel blog, expertly designed with
               Next.js, is your gateway to discovering the wonders of our planet.
@@ -336,10 +336,10 @@ export default function Page() {
 
 
 
-        <div className="flex justify-between w-2/3 m-auto p-20" data-aos="fade-left">
+        <div className="flex justify-between p-20" data-aos="fade-left">
           <div>
           <div className="text-3xl mb-4 font-serif">City  Explorer</div>
-          <div>
+          <div className="w-80">
             "React Calculator" is your go-to digital calculator app, designed to
             simplify and streamline your mathematical tasks. Built entirely with
             React, it offers a responsive and user-friendly tool for your daily
