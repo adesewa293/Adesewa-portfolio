@@ -36,10 +36,10 @@ export default function Page() {
 
   return (
     <div>
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row justify-between">
         <div className="flex-1">
           <div
-            className="text-6xl text-amber-700 font-serif mt-14 ml-3"
+            className="text-3xl md:text-6xl text-amber-700 font-serif mt-14 ml-3"
             data-aos="fade-up"
           >
             <p>HI, I AM</p>
@@ -153,7 +153,10 @@ export default function Page() {
         </div>
       </div>
       <hr />
-      <div id="projects" className="text-6xl text-center mt-7 mb-7  font-serif">
+      <div
+        id="projects"
+        className="text-3xl md:text-6xl text-center mt-7 mb-7 font-serif"
+      >
         My works
       </div>
       <hr />
@@ -374,7 +377,7 @@ export default function Page() {
 
         <hr />
 
-        <div className="text-6xl text-center mt-7 mb-7  font-serif">
+        <div className="text-3xl md:text-6xl text-center mt-7 mb-7 font-serif">
           Here are the few technologies i have used
         </div>
 
@@ -449,13 +452,13 @@ export default function Page() {
           <hr />
           <div
             id="contact"
-            className="text-6xl text-center mt-7 mb-7  font-serif"
+            className="text-3xl md:text-6xl text-center mt-7 mb-7 font-serif"
           >
             Get in touch
           </div>
           <hr />
-          <div className="w-2/3 m-auto p-10">
-            <p className="">
+          <div className="w-2/3 m-auto my-5">
+            <p>
               Dropping a line to say hello,ask for my resume or see if we can
               build somehing amazing together? I'd love to hear from you! Please
               fill in your information below and i look foward to hearing from
@@ -463,39 +466,34 @@ export default function Page() {
             </p>
             <form onSubmit={handleSubmit} className="text-black">
               <input
-                className="mb-3 mt-3 pl-2"
+                className="block mb-3 mt-3 w-full"
                 type="text"
                 name="name"
                 placeholder="Name"
                 required
               />
-              <br />
               <input
-                className="mb-3 pl-2"
+                className="block mb-3 w-full"
                 type="email"
                 name="email"
                 placeholder="Email"
                 required
               />
-              <br />
               <input
-                className="mb-3 pl-2"
+                className="block mb-3 w-full"
                 type="text"
                 name="subject"
                 placeholder="Subject"
               />
-              <br />
               <textarea
-                className="mb-3 pl-2"
-                cols={35}
+                className="block mb-3 w-full"
                 rows={10}
                 name="message"
                 placeholder="Message"
                 required
               ></textarea>
-              <br />
               <input
-                className="text-white border-2 border-amber-500 p-4 rounded-lg w-80"
+                className="text-white border-2 border-amber-500 p-4 rounded-lg w-full"
                 type="submit"
                 value="Send"
               ></input>
