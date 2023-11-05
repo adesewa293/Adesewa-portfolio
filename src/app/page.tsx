@@ -160,7 +160,7 @@ export default function Page() {
       <div>
         <div className="p-20">
           <div className="flex justify-between">
-            <div className="w-80">
+            <div className="grow">
               <div className="text-3xl mb-4 font-serif">
                 Fromscratch-recipes
               </div>
@@ -184,18 +184,17 @@ export default function Page() {
                 </Link>
               </div>
             </div>
-            <div>
+            <div className="relative min-w-[30%] h-80 ml-8">
               <Image
                 src="/mockup2-recipe.png"
                 alt="my cartoon web developer"
-                width={100}
-                height={0}
+                fill
               />
               <Image
-                className=""
+                className="absolute -right-8 -bottom-8"
                 src="/mockup-recipe.png"
                 alt="my cartoon web developer"
-                width={100}
+                width={80}
                 height={0}
               />
             </div>
@@ -203,24 +202,23 @@ export default function Page() {
         </div>
         <div className="p-20" data-aos="fade-left">
           <div className="flex justify-between">
-            <div>
+            <div className="relative min-w-[30%] h-60 mr-8">
               <Image
-                src="/books.png"
-                alt="my cartoon web developer"
-                width={100}
-                height={0}
-              />
-              <Image
-                className=""
                 src="/books2.png"
                 alt="my cartoon web developer"
-                width={200}
+                fill
+              />
+              <Image
+                className="absolute -left-8 -bottom-8"
+                src="/books.png"
+                alt="my cartoon web developer"
+                width={80}
                 height={0}
               />
             </div>
-            <div>
+            <div className="grow">
               <div className="text-3xl mb-4 font-serif">Can of books</div>
-              <div className="w-80">
+              <div>
                 "Can of Books," where the world of literature comes alive. Our
                 book sharing platform, built with the dynamic duo of React and
                 Express, is the digital gathering place for bookworms worldwide.
@@ -251,9 +249,9 @@ export default function Page() {
           className=" flex justify-between p-20"
           data-aos="fade-left"
         >
-          <div>
+          <div className="grow">
             <div className="text-3xl mb-4 font-serif">Resident Choice</div>
-            <div className="w-80">
+            <div>
               "Resident Choice" is a digital haven dedicated to enhancing the
               well-being and quality of life for residents in care homes.
               Meticulously crafted with React and Express, this platform places
@@ -271,18 +269,17 @@ export default function Page() {
               </Link>
             </div>
           </div>
-          <div>
+          <div className="relative min-w-[30%] h-60 ml-8">
             <Image
               src="/reesideent-choice.png"
               alt="my cartoon web developer"
-              width={250}
-              height={0}
+              fill
             />
             <Image
-              className=""
+              className="absolute -right-8 -bottom-8"
               src="/resident-choice.png"
               alt="my cartoon web developer"
-              width={150}
+              width={80}
               height={0}
             />
           </div>
@@ -292,24 +289,23 @@ export default function Page() {
           className="p-20 flex justify-between"
           data-aos="fade-left"
         >
-          <div>
+            <div className="relative min-w-[30%] h-60 mr-8">
             <Image
               src="/mockup-travelblog.png"
               alt="my cartoon web developer"
-              width={250}
-              height={0}
+              fill
             />
             <Image
-              className=""
+              className="absolute -left-8 -bottom-8"
               src="/untitled.png"
               alt="my cartoon web developer"
-              width={150}
+              width={80}
               height={0}
             />
           </div>
-          <div>
+            <div className="grow">
             <div className="text-3xl mb-4 font-serif">Explore Enroute</div>
-            <div className="w-80">
+            <div>
               Explore Enroute" is your passport to a world of adventure and
               exploration. This captivating travel blog, expertly designed with
               Next.js, is your gateway to discovering the wonders of our planet.
@@ -337,9 +333,9 @@ export default function Page() {
 
 
         <div className="flex justify-between p-20" data-aos="fade-left">
-          <div>
+          <div className="grow">
           <div className="text-3xl mb-4 font-serif">City  Explorer</div>
-          <div className="w-80">
+          <div>
             "React Calculator" is your go-to digital calculator app, designed to
             simplify and streamline your mathematical tasks. Built entirely with
             React, it offers a responsive and user-friendly tool for your daily
@@ -354,18 +350,17 @@ export default function Page() {
             </Link>
           </div>
           </div>
-          <div>
+          <div className="relative min-w-[30%] h-80 ml-8">
             <Image
               src="/city-explorer-2.png"
               alt="my cartoon web developer"
-              width={250}
-              height={0}
+              fill
             />
             <Image
-              className=""
+              className="absolute -right-8 -bottom-8"
               src="/city-explorer.png"
               alt="my cartoon web developer"
-              width={150}
+              width={80}
               height={0}
             />
           </div>
@@ -463,7 +458,7 @@ export default function Page() {
               fill in your information below and i look foward to hearing from
               you!
             </p>
-            <form onSubmit={handleSubmit} className="text-black ml-40">
+            <form onSubmit={handleSubmit} className="text-black">
               <input
                 className="mb-3 mt-3 pl-2"
                 type="text"
