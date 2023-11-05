@@ -179,7 +179,11 @@ export default function Page() {
                 <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
                   View Demo
                 </button>
-                <Link target="_blank" href="https://github.com/adesewa293/fromscratch-recipes" className="border-2 border-amber-600 rounded-lg p-4">
+                <Link
+                  target="_blank"
+                  href="https://github.com/adesewa293/fromscratch-recipes"
+                  className="border-2 border-amber-600 rounded-lg p-4"
+                >
                   Source Code
                 </Link>
               </div>
@@ -203,11 +207,7 @@ export default function Page() {
         <div className="p-20" data-aos="fade-left">
           <div className="flex justify-between">
             <div className="relative min-w-[30%] h-60 mr-8">
-              <Image
-                src="/books2.png"
-                alt="my cartoon web developer"
-                fill
-              />
+              <Image src="/books2.png" alt="my cartoon web developer" fill />
               <Image
                 className="absolute -left-8 -bottom-8"
                 src="/books.png"
@@ -237,7 +237,11 @@ export default function Page() {
                 <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
                   View Demo
                 </button>
-                <Link target="_blank" href="https://github.com/adesewa293/can-of-books-frontend" className="border-2 border-amber-600 rounded-lg p-4">
+                <Link
+                  target="_blank"
+                  href="https://github.com/adesewa293/can-of-books-frontend"
+                  className="border-2 border-amber-600 rounded-lg p-4"
+                >
                   Source Code
                 </Link>
               </div>
@@ -245,10 +249,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div
-          className=" flex justify-between p-20"
-          data-aos="fade-left"
-        >
+        <div className=" flex justify-between p-20" data-aos="fade-left">
           <div className="grow">
             <div className="text-3xl mb-4 font-serif">Resident Choice</div>
             <div>
@@ -264,7 +265,11 @@ export default function Page() {
               <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
                 View Demo
               </button>
-              <Link target="_blank" href="https://github.com/adesewa293/reesident-choice-frontend" className="border-2 border-amber-600 rounded-lg p-4">
+              <Link
+                target="_blank"
+                href="https://github.com/adesewa293/reesident-choice-frontend"
+                className="border-2 border-amber-600 rounded-lg p-4"
+              >
                 Source Code
               </Link>
             </div>
@@ -285,11 +290,8 @@ export default function Page() {
           </div>
         </div>
 
-        <div
-          className="p-20 flex justify-between"
-          data-aos="fade-left"
-        >
-            <div className="relative min-w-[30%] h-60 mr-8">
+        <div className="p-20 flex justify-between" data-aos="fade-left">
+          <div className="relative min-w-[30%] h-60 mr-8">
             <Image
               src="/mockup-travelblog.png"
               alt="my cartoon web developer"
@@ -303,7 +305,7 @@ export default function Page() {
               height={0}
             />
           </div>
-            <div className="grow">
+          <div className="grow">
             <div className="text-3xl mb-4 font-serif">Explore Enroute</div>
             <div>
               Explore Enroute" is your passport to a world of adventure and
@@ -322,33 +324,37 @@ export default function Page() {
               <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
                 View Demo
               </button>
-              <Link href="https://github.com/adesewa293/explore-enroute" className="border-2 border-amber-600 rounded-lg p-4">
+              <Link
+                href="https://github.com/adesewa293/explore-enroute"
+                className="border-2 border-amber-600 rounded-lg p-4"
+              >
                 Source Code
               </Link>
             </div>
           </div>
         </div>
 
-
-
-
         <div className="flex justify-between p-20" data-aos="fade-left">
           <div className="grow">
-          <div className="text-3xl mb-4 font-serif">City  Explorer</div>
-          <div>
-            "React Calculator" is your go-to digital calculator app, designed to
-            simplify and streamline your mathematical tasks. Built entirely with
-            React, it offers a responsive and user-friendly tool for your daily
-            calculations.
-          </div>
-          <div className="mt-4">
-            <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
-              View Demo
-            </button>
-            <Link target="_blank" href="https://github.com/adesewa293/city-explorer" className="border-2 border-amber-600 rounded-lg p-4">
-              Source Code
-            </Link>
-          </div>
+            <div className="text-3xl mb-4 font-serif">City Explorer</div>
+            <div>
+              "React Calculator" is your go-to digital calculator app, designed
+              to simplify and streamline your mathematical tasks. Built entirely
+              with React, it offers a responsive and user-friendly tool for your
+              daily calculations.
+            </div>
+            <div className="mt-4">
+              <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
+                View Demo
+              </button>
+              <Link
+                target="_blank"
+                href="https://github.com/adesewa293/city-explorer"
+                className="border-2 border-amber-600 rounded-lg p-4"
+              >
+                Source Code
+              </Link>
+            </div>
           </div>
           <div className="relative min-w-[30%] h-80 ml-8">
             <Image
@@ -365,9 +371,6 @@ export default function Page() {
             />
           </div>
         </div>
-
-
-
 
         <hr />
 
