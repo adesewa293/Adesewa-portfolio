@@ -38,7 +38,40 @@ export default function Header() {
           />
         </svg>
       </button>
-      <div className={`md:block mt-4 ${isMobileMenuOpen ? "hidden" : "block"}`}>
+      <div className="hidden md:block mt-4">
+        <Link
+          className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
+          href="/"
+        >
+          Home
+        </Link>
+        <Link
+          className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
+          href="#about"
+        >
+          About
+        </Link>
+        <Link
+          className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
+          href="#contact"
+        >
+          Contact
+        </Link>
+        <Link
+          className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
+          href="#projects"
+        >
+          Projects
+        </Link>
+        <Link
+          target="_blank"
+          href="/assets/resume.pdf"
+          className="border-amber-700 border-2 rounded-lg p-3"
+        >
+          RESUME
+        </Link>
+      </div>
+      <div className={`flex flex-col md:hidden items-center absolute top-0 left-0 bg-gray-400 w-full ${isMobileMenuOpen ? "hidden" : "flex"}`}>
         <Link
           className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
           href="/"
