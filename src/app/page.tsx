@@ -148,9 +148,9 @@ export default function Page() {
             reality, I'm here to help. Whether you have a specific project in
             mind or you need guidance on how to enhance your online presence,
             I'm ready to discuss your goals and explore how we can work
-            together. Feel free to contact me to
-            start a conversation. I look forward to working with you to create
-            exceptional web solutions that make a lasting impact.
+            together. Feel free to contact me to start a conversation. I look
+            forward to working with you to create exceptional web solutions that
+            make a lasting impact.
           </p>
         </div>
       </div>
@@ -346,10 +346,10 @@ export default function Page() {
           <div className="grow">
             <div className="text-3xl mb-4 font-serif">City Explorer</div>
             <div>
-              "React Calculator" is your go-to digital calculator app, designed
-              to simplify and streamline your mathematical tasks. Built entirely
-              with React, it offers a responsive and user-friendly tool for your
-              daily calculations.
+              City Explorer App: Discover cities effortlessly with our City
+              Explorer App, powered by an Express backend and React frontend.
+              Get location data, interactive maps, and the ability to save and
+              share your favorite spots. Explore confidently with us.
             </div>
             <div className="mt-4">
               <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
