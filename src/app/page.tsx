@@ -86,7 +86,7 @@ export default function Page() {
             About Me
           </div>
           <p data-aos="fade-up">
-            Hello, I'm Adesewa, a passionate and innovative web developer
+            Hello, I'm Aishat Adesewa, a passionate and innovative web developer
             dedicated to crafting exceptional digital experiences. With a
             profound love for coding and a keen eye for design, I create
             websites and web applications that not only meet but exceed the
@@ -103,9 +103,7 @@ export default function Page() {
             has been an exciting ride ever since. I started with a strong
             foundation in HTML, CSS, and JavaScript and continually expanded my
             skills in response to the ever-evolving landscape of web
-            technologies. I thrive on the challenges and problem-solving that
-            web development presents, and I am always eager to embrace new tools
-            and techniques.
+            technologies.
           </p>
         </div>
         <div
@@ -119,8 +117,8 @@ export default function Page() {
             e-commerce site, I'm committed to delivering solutions that not only
             look great but also function flawlessly. My skills extend to: -
             Front-end development with HTML, CSS, JavaScript, and modern
-            frameworks like React and Vue.js. - Back-end development using
-            languages such as Node.js and Python, along with database
+            frameworks like React and Nextjs. - Back-end development using
+            languages such as Node.js and Express, along with database
             management. - Integrating third-party APIs and services to enhance
             website functionality. - Optimizing websites for performance, speed,
             and SEO.
@@ -137,7 +135,7 @@ export default function Page() {
             strong communication and collaboration with my clients, ensuring
             that I understand their unique needs and goals. I'm also dedicated
             to continuous learning, staying up-to-date with the latest trends
-            and best practices in the field.{" "}
+            and best practices in the field.
           </p>
         </div>
         <div
@@ -150,7 +148,7 @@ export default function Page() {
             reality, I'm here to help. Whether you have a specific project in
             mind or you need guidance on how to enhance your online presence,
             I'm ready to discuss your goals and explore how we can work
-            together. Feel free to [contact me](mailto:youremail@example.com) to
+            together. Feel free to contact me to
             start a conversation. I look forward to working with you to create
             exceptional web solutions that make a lasting impact.
           </p>
@@ -211,7 +209,7 @@ export default function Page() {
           className="flex flex-col md:flex-row p-10 md:p-20"
           data-aos="fade-up"
         >
-          <div className="relative min-w-[30%] h-60 md:pr-8 mb-8 md:mb-0">
+          <div className="relative min-w-[30%] h-60 mb-8 md:mb-0 md:mr-8">
             <Image src="/books2.png" alt="my cartoon web developer" fill />
             <Image
               className="absolute -left-8 -bottom-8"
@@ -280,7 +278,7 @@ export default function Page() {
               </Link>
             </div>
           </div>
-          <div className="relative min-w-[30%] h-60 md:pl-8 mb-8 md:mb-0">
+          <div className="relative min-w-[30%] h-60 md:ml-8 mb-8 md:mb-0">
             <Image
               src="/reesideent-choice.png"
               alt="my cartoon web developer"
@@ -299,7 +297,7 @@ export default function Page() {
           className="flex flex-col md:flex-row p-10 md:p-20"
           data-aos="fade-up"
         >
-          <div className="relative min-w-[30%] h-60 md:pr-8 mb-8 md:mb-0">
+          <div className="relative min-w-[30%] h-60 md:mr-8 mb-8 md:mb-0">
             <Image
               src="/mockup-travelblog.png"
               alt="my cartoon web developer"
@@ -366,7 +364,7 @@ export default function Page() {
               </Link>
             </div>
           </div>
-          <div className="relative min-w-[30%] h-80 md:pl-8 mb-8 md:mb-0">
+          <div className="relative min-w-[30%] h-80 md:ml-8 mb-8 md:mb-0">
             <Image
               src="/city-explorer-2.png"
               alt="my cartoon web developer"
