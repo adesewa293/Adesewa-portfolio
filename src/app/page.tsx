@@ -79,6 +79,7 @@ export default function Page() {
       <div className="font-mono">
         <div
           id="about"
+          data-aos="fade-down"
           className="border-2 border-amber-400 rounded-lg w-2/3 m-auto p-3 mt-14"
         >
           <div data-aos="fade-up" className="p-5 text-amber-400 text-3xl">
@@ -97,7 +98,7 @@ export default function Page() {
           className="border-2 border-amber-600 rounded-lg w-2/3 m-auto p-3 mt-4"
         >
           <div className="text-3xl text-amber-600 p-5">My Journey</div>
-          <p data-aos="fade-down">
+          <p>
             My journey in the world of web development began a year ago, and it
             has been an exciting ride ever since. I started with a strong
             foundation in HTML, CSS, and JavaScript and continually expanded my
@@ -107,11 +108,12 @@ export default function Page() {
             and techniques.
           </p>
         </div>
-        <div className="border-2 rounded-lg border-amber-700 w-2/3 m-auto p-3 mt-4">
-          <div data-aos="fade-left" className="p-5 text-amber-700 text-3xl">
-            What I Do
-          </div>
-          <p data-aos="fade-left">
+        <div
+          data-aos="fade-down"
+          className="border-2 rounded-lg border-amber-700 w-2/3 m-auto p-3 mt-4"
+        >
+          <div className="p-5 text-amber-700 text-3xl">What I Do</div>
+          <p>
             I specialize in building clean, responsive, and user-friendly
             websites. Whether it's a personal blog, a corporate platform, or an
             e-commerce site, I'm committed to delivering solutions that not only
@@ -124,11 +126,12 @@ export default function Page() {
             and SEO.
           </p>
         </div>
-        <div className="border-2 rounded-lg w-2/3 border-amber-800 m-auto p-3 mt-4">
-          <div data-aos="fade-right" className="text-3xl text-amber-800 p-5">
-            Why Choose Me
-          </div>
-          <p data-aos="fade-right">
+        <div
+          data-aos="fade-down"
+          className="border-2 rounded-lg w-2/3 border-amber-800 m-auto p-3 mt-4"
+        >
+          <div className="text-3xl text-amber-800 p-5">Why Choose Me</div>
+          <p>
             I take pride in my ability to transform ideas into interactive,
             visually appealing, and high-performing websites. I believe in
             strong communication and collaboration with my clients, ensuring
@@ -137,11 +140,12 @@ export default function Page() {
             and best practices in the field.{" "}
           </p>
         </div>
-        <div className="border-2 rounded-lg w-2/3 border-amber-900 m-auto p-3 mt-4 mb-6">
-          <div data-aos="fade-left" className="text-3xl text-amber-950 p-5">
-            Let's Collaborate
-          </div>
-          <p data-aos="fade-left">
+        <div
+          data-aos="fade-down"
+          className="border-2 rounded-lg w-2/3 border-amber-900 m-auto p-3 mt-4 mb-6"
+        >
+          <div className="text-3xl text-amber-950 p-5">Let's Collaborate</div>
+          <p>
             If you're looking for a web developer who can turn your vision into
             reality, I'm here to help. Whether you have a specific project in
             mind or you need guidance on how to enhance your online presence,
@@ -161,98 +165,97 @@ export default function Page() {
       </div>
       <hr />
       <div>
-        <div className="p-20">
-          <div className="flex justify-between">
-            <div className="grow">
-              <div className="text-3xl mb-4 font-serif">
-                Fromscratch-recipes
-              </div>
-              <div>
-                "From-Scratch Recipes", a web platform crafted with HTML, CSS,
-                and JavaScript. Where food enthusiasts come together to share,
-                discover, and savor delectable dishes created entirely from
-                scratch. "From-Scratch Recipes" celebrates the art of cooking
-                from the heart, and with its HTML, CSS, and JavaScript
-                foundation, it ensures a seamless and enjoyable browsing
-                experience for all users. Join us in embracing the pleasures of
-                wholesome, homemade cuisine. Visit "From-Scratch Recipes" today
-                and embark on a culinary adventure like no other.
-              </div>
-              <div className="mt-4">
-                <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
-                  View Demo
-                </button>
-                <Link
-                  target="_blank"
-                  href="https://github.com/adesewa293/fromscratch-recipes"
-                  className="border-2 border-amber-600 rounded-lg p-4"
-                >
-                  Source Code
-                </Link>
-              </div>
+        <div className="flex flex-col-reverse md:flex-row p-10 md:p-20">
+          <div className="grow">
+            <div className="text-3xl mb-4 font-serif">Fromscratch-recipes</div>
+            <div>
+              "From-Scratch Recipes", a web platform crafted with HTML, CSS, and
+              JavaScript. Where food enthusiasts come together to share,
+              discover, and savor delectable dishes created entirely from
+              scratch. "From-Scratch Recipes" celebrates the art of cooking from
+              the heart, and with its HTML, CSS, and JavaScript foundation, it
+              ensures a seamless and enjoyable browsing experience for all
+              users. Join us in embracing the pleasures of wholesome, homemade
+              cuisine. Visit "From-Scratch Recipes" today and embark on a
+              culinary adventure like no other.
             </div>
-            <div className="relative min-w-[30%] h-80 ml-8">
-              <Image
-                src="/mockup2-recipe.png"
-                alt="my cartoon web developer"
-                fill
-              />
-              <Image
-                className="absolute -right-8 -bottom-8"
-                src="/mockup-recipe.png"
-                alt="my cartoon web developer"
-                width={80}
-                height={0}
-              />
+            <div className="mt-4">
+              <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
+                View Demo
+              </button>
+              <Link
+                target="_blank"
+                href="https://github.com/adesewa293/fromscratch-recipes"
+                className="border-2 border-amber-600 rounded-lg p-4"
+              >
+                Source Code
+              </Link>
+            </div>
+          </div>
+          <div className="relative min-w-[30%] h-80 md:pl-8 mb-8 md:mb-0">
+            <Image
+              src="/mockup2-recipe.png"
+              alt="my cartoon web developer"
+              fill
+            />
+            <Image
+              className="absolute -right-8 -bottom-8"
+              src="/mockup-recipe.png"
+              alt="my cartoon web developer"
+              width={80}
+              height={0}
+            />
+          </div>
+        </div>
+        <div
+          className="flex flex-col md:flex-row p-10 md:p-20"
+          data-aos="fade-up"
+        >
+          <div className="relative min-w-[30%] h-60 md:pr-8 mb-8 md:mb-0">
+            <Image src="/books2.png" alt="my cartoon web developer" fill />
+            <Image
+              className="absolute -left-8 -bottom-8"
+              src="/books.png"
+              alt="my cartoon web developer"
+              width={80}
+              height={0}
+            />
+          </div>
+          <div className="grow">
+            <div className="text-3xl mb-4 font-serif">Can of books</div>
+            <div>
+              "Can of Books," where the world of literature comes alive. Our
+              book sharing platform, built with the dynamic duo of React and
+              Express, is the digital gathering place for bookworms worldwide.
+              we offer a 📖 Diverse Library where you can dive into an extensive
+              collection of books spanning genres from suspenseful thrillers to
+              heartwarming classics. At "Can of Books," we're more than a
+              website; we're a gathering place for those who believe in the
+              transformative power of words. Our user-friendly design, empowered
+              by React and Express, ensures a seamless and enjoyable experience
+              for all users, whether you're a seasoned book aficionado or new to
+              the world of reading. Join us in celebrating the magic of books,
+              and become a part of the global conversation about literature.
+              Tech Stack: React, Express.
+            </div>
+            <div className="mt-4">
+              <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
+                View Demo
+              </button>
+              <Link
+                target="_blank"
+                href="https://github.com/adesewa293/can-of-books-frontend"
+                className="border-2 border-amber-600 rounded-lg p-4"
+              >
+                Source Code
+              </Link>
             </div>
           </div>
         </div>
-        <div className="p-20" data-aos="fade-left">
-          <div className="flex justify-between">
-            <div className="relative min-w-[30%] h-60 mr-8">
-              <Image src="/books2.png" alt="my cartoon web developer" fill />
-              <Image
-                className="absolute -left-8 -bottom-8"
-                src="/books.png"
-                alt="my cartoon web developer"
-                width={80}
-                height={0}
-              />
-            </div>
-            <div className="grow">
-              <div className="text-3xl mb-4 font-serif">Can of books</div>
-              <div>
-                "Can of Books," where the world of literature comes alive. Our
-                book sharing platform, built with the dynamic duo of React and
-                Express, is the digital gathering place for bookworms worldwide.
-                we offer a 📖 Diverse Library where you can dive into an
-                extensive collection of books spanning genres from suspenseful
-                thrillers to heartwarming classics. At "Can of Books," we're
-                more than a website; we're a gathering place for those who
-                believe in the transformative power of words. Our user-friendly
-                design, empowered by React and Express, ensures a seamless and
-                enjoyable experience for all users, whether you're a seasoned
-                book aficionado or new to the world of reading. Join us in
-                celebrating the magic of books, and become a part of the global
-                conversation about literature. Tech Stack: React, Express.
-              </div>
-              <div className="mt-4">
-                <button className="border-2 border-amber-400 rounded-lg p-4 mr-3">
-                  View Demo
-                </button>
-                <Link
-                  target="_blank"
-                  href="https://github.com/adesewa293/can-of-books-frontend"
-                  className="border-2 border-amber-600 rounded-lg p-4"
-                >
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className=" flex justify-between p-20" data-aos="fade-left">
+        <div
+          className="flex flex-col-reverse md:flex-row p-10 md:p-20"
+          data-aos="fade-up"
+        >
           <div className="grow">
             <div className="text-3xl mb-4 font-serif">Resident Choice</div>
             <div>
@@ -277,7 +280,7 @@ export default function Page() {
               </Link>
             </div>
           </div>
-          <div className="relative min-w-[30%] h-60 ml-8">
+          <div className="relative min-w-[30%] h-60 md:pl-8 mb-8 md:mb-0">
             <Image
               src="/reesideent-choice.png"
               alt="my cartoon web developer"
@@ -292,9 +295,11 @@ export default function Page() {
             />
           </div>
         </div>
-
-        <div className="p-20 flex justify-between" data-aos="fade-left">
-          <div className="relative min-w-[30%] h-60 mr-8">
+        <div
+          className="flex flex-col md:flex-row p-10 md:p-20"
+          data-aos="fade-up"
+        >
+          <div className="relative min-w-[30%] h-60 md:pr-8 mb-8 md:mb-0">
             <Image
               src="/mockup-travelblog.png"
               alt="my cartoon web developer"
@@ -336,8 +341,10 @@ export default function Page() {
             </div>
           </div>
         </div>
-
-        <div className="flex justify-between p-20" data-aos="fade-left">
+        <div
+          className="flex flex-col-reverse md:flex-row p-10 md:p-20"
+          data-aos="fade-up"
+        >
           <div className="grow">
             <div className="text-3xl mb-4 font-serif">City Explorer</div>
             <div>
@@ -359,7 +366,7 @@ export default function Page() {
               </Link>
             </div>
           </div>
-          <div className="relative min-w-[30%] h-80 ml-8">
+          <div className="relative min-w-[30%] h-80 md:pl-8 mb-8 md:mb-0">
             <Image
               src="/city-explorer-2.png"
               alt="my cartoon web developer"
