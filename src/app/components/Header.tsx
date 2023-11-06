@@ -73,7 +73,7 @@ export default function Header() {
       </div>
       <div
         className={`flex flex-col md:hidden absolute top-0 left-0 bg-gray-400 w-full ${
-          isMobileMenuOpen ? "hidden" : "flex"
+          isMobileMenuOpen ? "flex" : "hidden"
         }`}
       >
         <div className="self-end" onClick={toggleMobileMenu}>
