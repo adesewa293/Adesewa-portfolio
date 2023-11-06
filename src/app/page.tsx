@@ -305,7 +305,7 @@ export default function Page() {
             />
             <Image
               className="absolute -left-8 -bottom-8"
-              src="/untitled.png"
+              src="/travelblog-mobile.png"
               alt="my cartoon web developer"
               width={80}
               height={0}
