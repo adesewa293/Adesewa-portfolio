@@ -10,7 +10,7 @@ export default function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const handleMobileClick = () => {
+  const handleMobileLinkClick = () => {
     setIsMobileMenuOpen(false);
   };
 
@@ -96,21 +96,21 @@ export default function Header() {
           </Link>
           <Link
             className="mr-4 hover:underline hover:decoration-dotted underline-offset-8 mb-8"
-            onClick={handleMobileClick}
+            onClick={handleMobileLinkClick}
             href="#about"
           >
             About
           </Link>
           <Link
             className="mr-4 hover:underline hover:decoration-dotted underline-offset-8 mb-8"
-            onClick={handleMobileClick}
+            onClick={handleMobileLinkClick}
             href="#contact"
           >
             Contact
           </Link>
           <Link
             className="mr-4 hover:underline hover:decoration-dotted underline-offset-8 mb-8"
-            onClick={handleMobileClick}
+            onClick={handleMobileLinkClick}
             href="#projects"
           >
             Projects
@@ -118,7 +118,7 @@ export default function Header() {
           <Link
             target="_blank"
             href="/assets/resume.pdf"
-            onClick={handleMobileClick}
+            onClick={handleMobileLinkClick}
             className="border-amber-700 border-2 rounded-lg p-3 mb-8"
           >
             RESUME
