@@ -27,7 +27,19 @@ export default function Header() {
       >
         <span className="sr-only">Open main menu</span>
         {isMobileMenuOpen ? (
-          <img width="20px" src="/close-icon.png" />
+          <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 10.586l3.293-3.293 1.414 1.414L13.414 12l3.293 3.293-1.414 1.414L12 13.414l-3.293 3.293-1.414-1.414L10.586 12 7.293 8.707l1.414-1.414L12 10.586z"
+            fill="currentColor"
+          />
+        </svg>
+        
         ) : (
           <svg
             className="w-5 h-5"
