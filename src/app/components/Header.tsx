@@ -18,7 +18,7 @@ export default function Header() {
       <button
         type="button"
         onClick={toggleMobileMenu}
-        className="md:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        className="md:hidden inline-flex items-center mt-2 p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-expanded={isMobileMenuOpen}
       >
         <span className="sr-only">Open main menu</span>
@@ -38,7 +38,7 @@ export default function Header() {
           />
         </svg>
       </button>
-      <div className="hidden md:block mt-4">
+      <div className="hidden md:block mt-4 text-white">
         <Link
           className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
           href="/"
@@ -72,7 +72,7 @@ export default function Header() {
         </Link>
       </div>
       <div
-        className={`flex flex-col md:hidden absolute top-0 left-0 bg-gray-400 w-full ${
+        className={`flex flex-col md:hidden fixed top-0 left-0 bg-black w-2/3 h-screen z-10 text-amber-200 text-2xl font-serif ${
           isMobileMenuOpen ? "flex" : "hidden"
         }`}
       >
@@ -81,25 +81,25 @@ export default function Header() {
         </div>
         <div className="flex flex-col items-center">
           <Link
-            className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
+            className="mr-4 hover:underline hover:decoration-dotted underline-offset-8 mt-16 mb-8"
             href="/"
           >
             Home
           </Link>
           <Link
-            className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
+            className="mr-4 hover:underline hover:decoration-dotted underline-offset-8 mb-8"
             href="#about"
           >
             About
           </Link>
           <Link
-            className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
+            className="mr-4 hover:underline hover:decoration-dotted underline-offset-8 mb-8"
             href="#contact"
           >
             Contact
           </Link>
           <Link
-            className="mr-4 hover:underline hover:decoration-dotted underline-offset-8"
+            className="mr-4 hover:underline hover:decoration-dotted underline-offset-8 mb-8"
             href="#projects"
           >
             Projects
@@ -107,7 +107,7 @@ export default function Header() {
           <Link
             target="_blank"
             href="/assets/resume.pdf"
-            className="border-amber-700 border-2 rounded-lg p-3"
+            className="border-amber-700 border-2 rounded-lg p-3 mb-8"
           >
             RESUME
           </Link>
